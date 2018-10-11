@@ -1,0 +1,100 @@
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h1{
+    text-align: center;
+}
+
+h3, h4{
+    margin:0;
+    text-align: center;
+}
+
+h3{
+    margin-bottom: 0.5rem;
+}
+
+h4{
+    margin-bottom:1rem;
+}
+
+html, body, .container{
+    height:100%;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#map{
+    max-width: 98%;
+    width:100%;
+    max-height:50%;
+    height:100%;
+    background-color:lightblue;
+    margin:0;
+    align-self: flex-start;
+}
+
+.mapboxgl-ctrl-bottom-left, .mapboxgl-ctrl-bottom-right{
+    display: none;
+}
+
+.not-visible{
+    display: none;
+}
+
+.image{
+    align-self: center;
+    margin-top: -25%;
+    max-width: 50%;
+    width:100%;
+    height:auto;
+    border-radius:50%;
+    z-index: 1;
+    border: solid 0.25rem white;
+}
+
+header.top{
+    width:100%;
+    height:10%;
+}
+
+footer.bottom{
+    max-width:98%;
+    width:100%;
+    justify-content: flex-start;
+}
+
+i.button.icon{
+    padding:10px 18%;
+    font-size: 2rem;
+    color:white;
+    background-color:rgb(230, 88, 88);
+    margin:0 0.25rem;
+}
+
+i.button.icon#like{
+    background-color: rgb(105, 184, 89);
+    float:right;
+}
+
+i.button.icon#check{
+    padding:0;
+    line-height: 5rem;
+    color:black;
+    background-color: rgba(0, 0, 0, 0);
+    float:left;
+    margin-left:1rem;
+}
