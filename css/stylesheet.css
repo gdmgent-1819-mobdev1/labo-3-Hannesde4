@@ -25,29 +25,112 @@ h4{
     margin-bottom:1rem;
 }
 
-html, body, .container{
+.mapboxgl-ctrl-bottom-right{
+    color:white;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 1%;
+    background-blend-mode: darken;
+}
+
+.mapboxgl-ctrl-attrib.mapboxgl-compact{
+    display: none;
+}
+
+html, body, .container, .wrapper{
     height:100%;
     overflow: hidden;
 }
 
-.container{
+.wrapper{
+    max-width:400px;
+    max-height: 700px;
+    margin: 0 auto;
+    border: solid 3px rgba(0, 0, 0, 0.05);
+}
+
+.wrapper, .container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+.container{
+    height:90%;
+    width:100%;
+    max-width:100%;
+}
+
+.status{
+    overflow: scroll;
+    height:100%;
+    padding-bottom:20%;
+}
+
+ol.personChoice{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding:0;
+}
+
+ol.personChoice p{
+    display: inline-block;
+}
+
+li.personList{
+    max-width:100%;
+    border-top:2px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    padding:10px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+li.personList:last-child{
+    margin-bottom:14%;
+}
+
+li.personList p:nth-child(odd){
+    flex-grow: 1;
+    text-align: right;
+    margin-right:10px;
+}
+
+i.personChoiceIcon.fa-heart, i.personChoiceIcon.fa-times{
+    color:white;
+    background-color:rgb(105, 184, 89);
+    line-height: 4rem;
+    font-size:2rem;
+    width:4rem;
+    text-align: center;
+}
+
+i.personChoiceIcon.fa-times{
+    background-color:rgb(230, 88, 88);
+}
+
+li.personList img{
+    border-radius: 10%;
+    display: inline-block;
+    max-width:20%;
+    margin-right:10px;
+}
+
 #map{
     max-width: 98%;
     width:100%;
-    max-height:50%;
+    max-height:60%;
     height:100%;
     background-color:lightblue;
     margin:0;
     align-self: flex-start;
 }
 
-.mapboxgl-ctrl-bottom-left, .mapboxgl-ctrl-bottom-right{
+.mapboxgl-ctrl-bottom-left{
     display: none;
 }
 

@@ -11,23 +11,25 @@
     <title>Hannes De Baere labo-3 Tinder V2</title>
 </head>
 <body>
-    <div class="container">
+    <div class="wrapper">
         <header class="top">
             <i class="button icon fas fa-bars" id="check"></i>
             <h1 class="appName">Vinder v2</h1>
         </header>
-        <div id='map'></div>
-        <img class="image" src="https://via.placeholder.com/200x200" alt="profile picture">
-        <footer class="bottom">
-            <h3 class="name"></h3>
-            <h4 class="place"></h4>
-            <i class="button icon fas fa-times" id="dislike"></i>
-            <i class="button icon fas fa-heart" id="like"></i>
-        </footer>
-    </div>
-    <div class="status not-visible">
-        <ol class="personChoice" id="personChoice">
-        </ol>
+        <div class="container">
+            <div id='map'></div>
+            <img class="image" src="https://via.placeholder.com/200x200" alt="profile picture">
+            <footer class="bottom">
+                <h3 class="name"></h3>
+                <h4 class="place"></h4>
+                <i class="button icon fas fa-times" id="dislike"></i>
+                <i class="button icon fas fa-heart" id="like"></i>
+            </footer>
+        </div>
+        <div class="container clearfix status not-visible">
+            <ol class="personChoice" id="personChoice">
+            </ol>
+        </div>
     </div>
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
     <script src="js/functions.js"></script>
